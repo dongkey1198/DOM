@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #efedd6;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.bax {
+  background-color: steelblue;
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(200%);
+  transition: transform 0.5s ease;
+}
+
+.bax:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.bax.show {
+  transform: translateX(0);
+}
+
+.bax h2 {
+  font-size: 45px;
+}
